@@ -27,7 +27,7 @@ sap.ui.jsview("shoppingcart.Welcome", {
 			title: "Welcome",
 			content: [
 			          new sap.m.VBox({
-			        	  items: [oImage,oText],
+			        	  items: [oImage],
 			        	  alignItems: sap.m.FlexAlignItems.Center,
 			        	  justifyContent: sap.m.FlexJustifyContent.Center
 			          })
