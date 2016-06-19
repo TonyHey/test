@@ -34,7 +34,7 @@ sap.demo.cart.common = {
 			sap.m.MessageToast.show('Item added in cart');
 		},
 
-		cartPress: function(evt,obj) {
+		cartPress: function(evt, obj) {
 			var router = sap.ui.core.UIComponent.getRouterFor(obj);
 			var list = sap.ui.getCore().byId("slistId");
 			var selected = list.getSelectedItem();
@@ -43,6 +43,10 @@ sap.demo.cart.common = {
 				list.setSelectedItem(selected, false);
 			}
 			router.navTo("Cart");
+		},
+
+		checkOut: function(evt, obj) {
+			obj.getModel('cart').setData([]);
 		}
 
 }

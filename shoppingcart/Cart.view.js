@@ -73,7 +73,7 @@ sap.ui.jsview("shoppingcart.Cart", {
 		var oCheckoutBtn = new sap.m.Button("bid",{
 			text: "Checkout",
 			press: function() {
-				alert("checkout");
+				sap.demo.cart.common.checkOut(evt,this);;
 			}
 		}).addStyleClass("customBtn");
 
